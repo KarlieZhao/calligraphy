@@ -1,7 +1,172 @@
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    letter-spacing: .4px;
 }
+
+#input {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 36px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 20px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    /* transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform, opacity;
+    z-index: 0;
+}
+
+.button:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+}
+
+.button:active {
+    box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
+    /* box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%); */
+    outline: none;
+}
+
+.button:focus {
+    outline: none;
+    border: 1px solid rgba(225, 228, 232, 0.2);
+}
+
+.button:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.demo {
+    padding: 20px;
+    margin-left: 10em;
+    margin-right: auto;
+    margin-top: 6em;
+    width: 25em
+}
+
 canvas {
-  display: block;
+    display: block;
+    margin-left: 10em;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* margin: auto; */
+}
+
+#rrpl {
+    float: right;
+    line-height: 2em;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin-right: 10em;
+    margin-top: 6em;
+    width: 50em;
+}
+
+#back {
+    float: right;
+    line-height: 2em;
+    letter-spacing: 2px;
+    padding: 20px;
+    margin-right: 10em;
+    margin-top: 6em;
+    width: 50em;
+}
+
+.picture-main {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    /* width: 50%; */
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#title-main {
+    margin-top: 1em;
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    font-weight: bold;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 4em;
+    font-family: "Lucida Console", Courier, monospace;
+    line-height: 1.3em;
+}
+
+a {
+    color: #3c4043;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 0.4em;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
 }
