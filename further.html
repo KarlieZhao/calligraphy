@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title> More - Calligraphy </title>
+</head>
+
+<body>
+
+    <div id="title-main">
+        Dad, Will You Teach Me Calligraphy?
+    </div>
+
+    <div class="subtitle">
+        Further Developments & By-products
+    </div>
+    <br><br>
+
+    <div class="main">
+        <b> -> Word Map & Pix2Dad's calligraphy Handbook </b>
+        <br><br> Hanzi, the written language of Chinese, is always a centered topic in art creation in the context of Chinese culture. People have been trying to explore the interrelationships between Chinese characters based on their visual or acoustic
+        similarity. An interesting example of mapping 8,615 Chinese character can be found <a href="https://hanziuniverse.com/">here</a>.
+        <br><br> Excitingly, with RRPL, it is rather simple to calculate the structural complexities of Chinese characters and hence come up with a scoring system to compare them. The charts below show how the scoring system works: to understand those
+        numbers, one will need to understand the <a href="https://github.com/LingDong-/rrpl">principles of RRPL - recursion and subdivision</a>.
+        <br><br> The scores increase each time when the recursion happens. The amount increased is equal to the horizontal/vertical division number at this recursion. Additionally, there is a number tracking how many RRPL strokes this character has. Note
+        that this number is not the same as the character's "real" number of strokes of when it is written by hand.
+    </div>
+
+    <div class="center">
+        <img class="picture-main" src="/images/chart_1.png" style="width: 30%;" alt="imitation">
+        <img class="picture-main" src="/images/chart_2.png" style="width: 30%;" alt="imitation">
+    </div>
+    <div class="main">
+        With this scoring system, we can create a word map visualizing the structural similarity between characters in a character family (a family of characters that have a same root/radical). In the following two images, the one on the left is a zoomed-in version
+        of the right one.</div>
+
+    <div class="center">
+        <img class="picture-main" src="/images/map_zoomin.png" style="width: 30%;" alt="imitation">
+        <img class="picture-main" src="/images/map_1.png" style="width: 30%;" alt="imitation">
+    </div>
+
+    <div class="main">
+        And of course, the visual similarity also shows in the generated calligraphy style, as shown below. I may use it to create a handbook of different Hanzi family, in case anyone would like to learn this half-machine's-half-dad's calligraphy style.
+    </div>
+    <div class="center">
+        <img class="picture-main" src="/images/handbook.png" style="width: 30%;" alt="imitation">
+    </div>
+
+    <div class="main">
+        <br><br><b>-> Zi2Zi</b>
+        <br><br>We've seen that due to the differences between the two images in each input pair, the Pix2Pix model is not able to produce very satisfactory image outputs. Another promising GAN that worths a try is <a href="https://kaonashi-tyc.github.io/2017/04/06/zi2zi.html">Zi2Zi</a>,
+        a Conditional Adversarial Network that specifically targets conversions between Chinese fonts styles.
+        <br>
+        <br><br>
+        <div class="center">
+            <img class="picture-main" src="/images/zi2zi.png" style="width: 70%;" alt="zi2zi"><br>
+            <br><i>A demo of the Zi2Zi input & output pairs. <br>
+                LEFT: original character, RIGHT: inferred character.</i></div>
+    </div>
+
+    <a href="index.html" id="back">Back to Home</a>
+</body>
+
+
+</html>
